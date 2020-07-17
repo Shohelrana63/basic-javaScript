@@ -4,21 +4,26 @@ function feetToMile(feet){
     return mile;
 }
 var result = feetToMile(15000);
-console.log(result.toFixed(3));
+console.log(result.toFixed(5) + " mile");
+
+
+
 
 // woodCalculator//
 function woodCalculator(chair, table, bed){
-    // 1 cubic wood to make 1 chair
-    // 3 cubic wood to make 1 table
-    // 5 cubic wood to make 1 bed
-    var chairCount = chair*1;
-    var tableCount = table* 3;
-    var bedCount =bed* 5;
-    var total = chairCount + tableCount + bedCount;
-    return total;
+
+     var countOfChair = chair*1;        // 1 cubic wood to make 1 chair
+     var countOfTable = table* 3;       // 3 cubic wood to make 1 table
+     var countOfBed =bed* 5;            // 5 cubic wood to make 1 bed
+     var total = countOfChair + countOfTable + countOfBed;
+     return total;
 }
+
 var result = woodCalculator(14,5,12);
 console.log("The amount of Cubic = " + result);
+
+
+
 
 //brickCalculator
 function brickCalculator(numOfFloors){
@@ -40,14 +45,16 @@ var result = brickCalculator(12);
 console.log("Total of bricks = "+ result);
 
 
+
+
 //tinyFriend
-function tinyFriend(names){
-    var shortest = names[0];
-    for(var i=1; i<names.length; i++){
-        if(names[i].length<shortest.length)
-            shortest = names[i];
+function tinyFriend(arrayNames){
+    var shortestName = arrayNames[0];
+    for(var i=1; i<arrayNames.length; i++){
+        if(arrayNames[i].length<shortestName.length)
+        shortestName =arrayNames[i];
     }
-    return shortest;
+    return shortestName;
 }
 var result = tinyFriend(['Jackie', 'Steve','Zuckerberg', 'father']);
-console.log(result);
+console.log("The tiny friend is " + result);
