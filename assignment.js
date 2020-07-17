@@ -26,6 +26,11 @@ console.log("The amount of Cubic = " + result);
 
 
 //brickCalculator
+/*
+The first 10 floors are 15 feet high
+From 11th floor to 20th floor, each floor is 12 feet high
+From the 21st floor to the top, all are 10 feet high
+*/
 function brickCalculator(numOfFloors){
     if(numOfFloors<=0){
         console.log("Number of floors can't be 0 or less")
